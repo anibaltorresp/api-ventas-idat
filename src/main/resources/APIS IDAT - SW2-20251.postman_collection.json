@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "4a3d3878-20c5-479c-b4fa-18deae5619ea",
+		"name": "APIS IDAT - SW2-20251",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33192973"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Actualizar categoría",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryname\": \"Salsas\",\r\n    \"description\": \"Salsas Nuevas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/category/9"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar categoría por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryname\": \"Salsas\",\r\n    \"description\": \"Salsas Nuevas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/category/9"
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar categoría",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryname\": \"Salsas\",\r\n    \"description\": \"Salsas Nuevas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/category"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
