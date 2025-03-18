@@ -13,7 +13,7 @@ public class Product {
     private Double unitprice;
     private Integer unitsinstock;
     private Integer reorderlevel;
-    private Boolean descontinued;
+    private Boolean discontinued;
 
     @ManyToOne
     @JoinColumn(name ="supplierid")
@@ -87,11 +87,11 @@ public class Product {
         this.reorderlevel = reorderlevel;
     }
 
-    public Boolean getDescontinued() {
-        return descontinued;
+    public Boolean getDiscontinued() {
+        return discontinued;
     }
 
-    public void setDescontinued(Boolean descontinued) {
-        this.descontinued = descontinued;
+    public void setDiscontinued(Boolean discontinued) {
+        this.discontinued = discontinued;
     }
 }
